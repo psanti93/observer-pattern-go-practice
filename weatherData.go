@@ -1,22 +1,24 @@
 package main
 
 type WeatherData struct {
-	Observer
+	Observers   []Observer
 	Temperature float64
 	Humidity    float64
 	Pressure    float64
 }
 
-func (w *WeatherData) RegisterObserver() {
+func (w *WeatherData) RegisterObserver(observer Observer) {
+	w.Observers = append(w.Observers, observer)
 }
 
-func (w *WeatherData) RemoveObserver() {
+func (w *WeatherData) RemoveObserver(observer Observer) {
 
 }
 
 func (w *WeatherData) NotifyObservers() {
-
-	w.Observer.Update()
+	for _, observer := range w.Observers {
+		observer.Update()
+	}
 
 }
 
