@@ -1,6 +1,8 @@
-package main
+package displays
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type CurrentConditions struct {
 	Temperature float64
