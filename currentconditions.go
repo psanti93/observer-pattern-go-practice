@@ -9,7 +9,7 @@ type CurrentConditions struct {
 }
 
 func (c *CurrentConditions) Display() {
-	fmt.Printf("Current Conditions: Temperature: %v F degrees and %v % humdity", c.Temperature, c.Humidity)
+	fmt.Printf("Current Conditions: Temperature: %v F degrees and %v  humdity", c.Temperature, c.Humidity)
 }
 
 func (c *CurrentConditions) Update() {
