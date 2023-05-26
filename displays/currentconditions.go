@@ -1,4 +1,4 @@
-package currentconditions
+package main
 
 import "fmt"
 
