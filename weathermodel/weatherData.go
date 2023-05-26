@@ -1,4 +1,4 @@
-package main
+package weatherdata
 
 type WeatherData struct {
 	Observers   []Observer
